@@ -1,0 +1,82 @@
+* {
+  font-family: Raleway;
+}
+
+#formAjoutAdmin {
+    position: absolute;
+    top: 15%;
+    left: 31%;
+  }
+
+form {
+  background-color: black;
+  border-radius: 10px;
+  width: 35%;
+  padding: 1%;
+  min-width: 300px; /* le form ne sera pas plus petit que 300 pixels */
+}
+
+form h2 {
+  color: white;
+  text-align: center;
+  font-size: 130%;
+}
+
+form i {
+  color: white;
+  font-size: 20px;
+  padding-left: 2%;
+  margin-left: 92%;
+  margin-top: 1%;
+}
+
+form i:hover {
+    cursor: pointer;
+  }
+
+form label {
+  color: white;
+  font-size: 75%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+  background-color: white;
+  width: 50%;
+  height: 35px;
+  border-radius: 8px;
+  margin-bottom: 2%;
+  outline: none;
+}
+
+input::placeholder {
+    font-size: 110%;
+  }
+
+.btnRadio{
+    display: flex;
+    justify-content: center;  /*Centre les éléments horizontalement*/
+    align-items: center; /*Centre les éléments verticalement*/
+    margin-top: 5%;
+    font-size: 120%;
+}
+
+input[type="radio"]{
+    margin: 2%;
+}
+
+
+#btnCo{
+    padding: 1% 2%;
+    border-radius: 8px;
+    background-color: #f6d250;
+    font-size: 100%;
+    cursor: pointer;
+    margin-left: 36%;
+    margin-top: 5%;
+}
