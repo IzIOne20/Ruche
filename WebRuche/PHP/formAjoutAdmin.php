@@ -28,9 +28,7 @@ if(isset($_POST['btnCo'])) // si le bouton du formulaire html  est appuyé alors
                 {
                     $insertMbr = $bdd->prepare("INSERT INTO membre(nom, prenom, mel, identifiant, mdp, numTelephone, role) VALUES(?,?,?,?,?,?,?)");
                     $insertMbr->execute(array($nom, $prenom, $mail, $identifiant, $mdp, $telephone, $radio));  // on insère les champs du form récupérer en php dans la BDD
-                    $message = "Votre Compte est créer !!";
-                    sleep(2);
-                    header('Location: ../index.html');  
+                    header('Location: detailsMembres.php');  
                     exit;
                 } else {
                     $message = "Les mots de passe de correspondent pas...";

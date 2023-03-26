@@ -17,7 +17,8 @@ if(!isset($_SESSION['identifiant']) AND !isset($_SESSION['mdp'])) // test si les
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/styleDetailsRuche.css">
+    <link rel="stylesheet" href="../CSS/styleAccueil.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Accueil</title>
 </head>
 <body>
@@ -43,10 +44,14 @@ if(!isset($_SESSION['identifiant']) AND !isset($_SESSION['mdp'])) // test si les
             </ul>
         </nav>
     </header>
+
     <h1>Bienvenue page d'accueil</h1>
     <br>
     <p>Profil de <?php echo $_SESSION['identifiant']. " Tu es un ". $_SESSION['role']; ?></p>
     <br>
-    <a href="deconnexion.php">Se déconnecter</a>
+    <a id="btnDeco" onclick="confirmationdeconnexion()">Se déconnecter</a>
+    
+
+    <script src="../JS/SA.js"></script>
 </body>
 </html>
