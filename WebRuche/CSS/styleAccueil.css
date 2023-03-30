@@ -1,0 +1,52 @@
+html {
+    scroll-behavior: smooth; /*pour que la page bouge agréablement*/
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+    background-size: cover;
+}
+
+.hautPage{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 25px;
+  background-color: black;
+}
+
+.menuNav{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.menuNav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 70px;
+  }
+  
+  .btnNav{
+    margin-right: 50px;
+  }
+  
+  #btnDeco{
+    background-color: #f6d250;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 780px;
+    border-radius: 10px;
+  }
+  
+  #btnDeco:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #f6d250;
+    transition: 0.2s;
+  }
