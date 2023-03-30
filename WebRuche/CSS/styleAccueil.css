@@ -1,9 +1,0 @@
-#btnDeco{
-    background-color: aqua;
-    border-radius: 8px;
-    padding: 10px;
-    font-size: 110%;
-}
-#btnDeco:hover{
-    cursor: pointer;
-}
