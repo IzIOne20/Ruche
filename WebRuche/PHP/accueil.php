@@ -36,19 +36,19 @@ if(!isset($_SESSION['identifiant']) AND !isset($_SESSION['mdp'])) // test si les
         <div class="menuNav">
         ¨   <?php if(isset($_SESSION['role']) && $_SESSION['role'] == 'Administrateur') { ?>
                 <a class="btnNav" href="accueil.php">Accueil</a></li>
-                <a href="detailsRuches.php">Voir les ruches</a>
-                <a href="detailsMembres.php">Voir les membres</a>
-                <a href="detailsVisiteurs.php">Voir les visiteurs</a>
+                <a class="btnNav" href="detailsRuches.php">Voir les ruches</a>
+                <a class="btnNav" href="detailsMembres.php">Voir les membres</a>
+                <a class="btnNav" href="detailsVisiteurs.php">Voir les visiteurs</a>
             <?php } ?>
             
             <?php if(isset($_SESSION['role']) && $_SESSION['role'] == 'Apiculteur') { ?>
-                <a href="accueil.php">Accueil</a>
-                <a href="detailsRuches.php">Voir les ruches</a>
-                <a href="detailsVisiteurs.php">Voir les visiteurs</a>
+                <a class="btnNav2" href="accueil.php">Accueil</a>
+                <a class="btnNav2" href="detailsRuches.php">Voir les ruches</a>
+                <a class="btnNav2" href="detailsVisiteurs.php">Voir les visiteurs</a>
             <?php } ?>
 
             <?php if(isset($_SESSION['role']) && $_SESSION['role'] == 'Visiteur') { ?>
-                    <a href="accueil.php">Accueil</a>
+                    <a class="btnNav3" href="accueil.php">Accueil</a>
             <?php } ?>
         </div>
 
