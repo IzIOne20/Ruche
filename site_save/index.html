@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- liaison de la librairi font awesome -->
+    <script
+      src="https://kit.fontawesome.com/3fc2be6b13.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- police du site -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ajout d'une icone de site web -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <!-- laision de la feuille de style -->
+    <link rel="stylesheet" href="./CSS/stylePage1.css" />
+    <title>Apiculteurs du Limousin</title>
+  </head>
+
+  <body>
+
+    <div id="flou"></div> <!-- ajout d'une div pour faire apparaitre un fond flou -->
+
+    <!-- haut de page avec le logo et les liens vers les réseaux sociaux -->
+    <header class="header">
+      <img src="./images/logo.png" alt="Logo du site" />
+      <nav>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <a href="https://fr-fr.facebook.com/" target="_blank">Facebook</a>
+        </li>
+        <li><a href="https://www.etsy.com/" target="_blank">Etsy</a></li>
+      </nav>
+    </header>
+
+    <!-- Haut de la page avec titre et bouton pour accéder au site -->
+    <section class="hautPage">
+      <div class="titre">
+        <h1 id="titre1">Bienvenue sur le site des apiculteurs du Limousin</h1>
+        <a id="btnAcces" onclick="ouvrirForm()"
+          >Accéder au site <i class="fa-sharp fa-solid fa-arrow-right"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="propos">
+        <h3>A propos</h3>
+        <p>Site à des fins pédagogique</p>
+      </div>
+      <div class="assistance">
+        <h3>Contacter l'assistance</h3>
+        <a href="" id="btnContact"
+          >Nous joindre<i class="fa-solid fa-envelope"></i
+        ></a>
+      </div>
+      <div class="equipeDev">
+        <h3>Équipe de developpement</h3>
+        <p>Lilian Taillandier</p>
+        <p>Nicolas Triché</p>
+        <p>Théau Delanier</p>
+      </div>
+    </footer>
+
+    <!-- Formulaire de connexion -->
+    <form action="./PHP/formCo.php" method="post" name="formCo" id="formCo">
+      <i class="fa-solid fa-xmark" onclick="fermerForm()"></i>
+      <br />
+      <h2>Connexion</h2>
+      <br />
+      <input
+        type="text"
+        placeholder="Identifiant"
+        name="identifiant"
+        id="identifiant"
+      />
+      <input type="password" placeholder="Mot de passe" name="mdp" id="mdp" />
+      <div align="center" class="divBtnCo">
+        <button type="submit" name="btnCo">Se Connecter</button>
+      </div>
+    </form>
+
+    <!-- ajout du script lié à la page -->
+    <script src="./JS/form.js"></script>
+
+  </body>
+</html>

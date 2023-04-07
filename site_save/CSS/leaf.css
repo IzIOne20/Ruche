@@ -1,0 +1,8 @@
+/*Placement de la carte sur la page web*/
+#map { 
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    width: 80%;
+    height: 70%;
+}
