@@ -1,0 +1,51 @@
+body{
+    background-image: url('fondSite.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#formCo {
+    position: absolute;
+    margin-left: 38%;
+    margin-top: 7%;
+  }
+  
+  form {
+    margin-top: 40%;
+    background-color: aqua;
+    padding: 10% 20%;
+    border-radius: 10px;
+    min-width: 300px; /* le form ne sera pas plus petit que 300 pixels */
+  }
+  
+  form h2 {
+    color: white;
+    text-align: center;
+  }
+  
+  form input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    background-color: white;
+    padding: 2%;
+    width: 90%;
+    height: 2em;
+    border-radius: 8px;
+    margin-bottom: 5%;
+    outline: none;
+  }
+
+  form button {
+    padding: 3% 9%;
+    border: none;
+    border-radius: 10px;
+    font-size: 100%;
+    color: black;
+    background-color: #f6d250;
+    cursor: pointer;
+    margin-top: 5%;
+  }    
