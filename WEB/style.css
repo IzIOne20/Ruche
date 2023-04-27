@@ -6,34 +6,37 @@ body{
 
 #formCo {
     position: absolute;
-    margin-left: 38%;
-    margin-top: 7%;
+    left: 35%;
+    top: 30%;
+    width:30%
   }
   
   form {
-    margin-top: 40%;
+    position:relative;
+    display: flex;
+    flex-direction: column;
     background-color: aqua;
-    padding: 10% 20%;
     border-radius: 10px;
     min-width: 300px; /* le form ne sera pas plus petit que 300 pixels */
+    width: 90%;
+    align-items: center;
+    padding-bottom: 5%;
   }
   
   form h2 {
     color: white;
     text-align: center;
+    font-size: 50px;
   }
   
-  form input {
-    display: flex;
-    flex-direction: column;
-  }
   
   input[type="text"],
   input[type="password"] {
     background-color: white;
     padding: 2%;
-    width: 90%;
-    height: 2em;
+    width: 80%;
+    font-size: 20px;
+    height: 3vh;
     border-radius: 8px;
     margin-bottom: 5%;
     outline: none;
@@ -83,10 +86,11 @@ form input {
 
 input[type="text"],
 input[type="password"] {
+  position:relative;
   background-color: white;
   padding: 2%;
   width: 80%;
-  height: 2vh;
+  height: 3vh;
   margin-left: 8%;
   border-radius: 8px;
   margin-bottom: 5%;
