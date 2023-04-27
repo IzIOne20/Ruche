@@ -26,7 +26,7 @@ body{
   form h2 {
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
   }
   
   
@@ -53,7 +53,7 @@ body{
     margin-top: 5%;
   }
 
-@media screen and (min-width: 400px) and (max-width: 720px) {
+@media screen and (min-width: 370px) and (max-width: 720px) {
   body{
     background-image: url('fondSiteMobile.png');
     background-repeat: no-repeat;
@@ -61,37 +61,36 @@ body{
 }
 
 #formCo {
-  position: absolute;
-  margin-left: 26%;
-  margin-top: 20%;
-}
+    position: absolute;
+    left: 23%;
+    top: 35%;
+    width:50%
+  }
 
-form {
-  margin-top: 20%;
-  background-color: aqua;
-  padding: 5% 10%;
-  border-radius: 10px;
-  min-width: 150px; /* le form ne sera pas plus petit que 300 pixels */
-}
 
-form h2 {
+  form {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    border-radius: 10px;
+    min-width: 200px; /* le form ne sera pas plus petit que 300 pixels */
+    width: 10%;
+    align-items: center;
+  }
+
+ form h2 {
   color: white;
   text-align: center;
-}
-
-form input {
-  display: flex;
-  flex-direction: column;
+  font-size: 20px;
 }
 
 input[type="text"],
 input[type="password"] {
-  position:relative;
   background-color: white;
-  padding: 2%;
-  width: 80%;
+  width: 70%;
+  font-size: 10px;
   height: 3vh;
-  margin-left: 8%;
   border-radius: 8px;
   margin-bottom: 5%;
   outline: none;
@@ -101,12 +100,11 @@ form button {
   padding: 3% 9%;
   border: none;
   border-radius: 10px;
-  font-size: 100%;
+  font-size: 70%;
   color: black;
   background-color: #f6d250;
   cursor: pointer;
   margin-top: 5%;
-  margin-left: 8%;
 }
 
 }
