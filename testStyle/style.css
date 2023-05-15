@@ -1,0 +1,39 @@
+.AjoutStagiaire{
+    position: absolute;
+    left: 37%;
+    top: 8%;
+}
+
+form{
+    background-color: beige;
+    width: 50vh;
+    padding: 5%;
+    padding-bottom: 10%;
+}
+
+form h2{
+   text-align: center;
+}
+
+form input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+    padding: 3%;
+    font-size: 3vh;
+    width: 45vh;
+    outline-color: black;
+}
+
+form button{
+   position: absolute;
+   left: 30%;
+   top: 94%;
+   font-size: 3vh;
+   width: 20vh;
+   border-radius: 5px;
+   border: none;
+   background-color: yellow;
+   color: black;
+   cursor: pointer;
+}
